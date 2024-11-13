@@ -19,6 +19,9 @@
 // Enable more layers
 #define DYNAMIC_KEYMAP_LAYER_COUNT 5
 
+// Enable NKRO by default
+#define FORCE_NKRO
+
 // Indication leds
 #define GAME_LOCK_INDEX 16
 #define SCROLL_LOCK_INDEX 14
