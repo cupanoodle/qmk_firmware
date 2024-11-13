@@ -21,6 +21,7 @@
 
 // Indication leds
 #define GAME_LOCK_INDEX 16
+#define SCROLL_LOCK_INDEX 14
 
 // RGB Defaults
 #define RGB_MATRIX_DEFAULT_HUE 191 //HSV_PURPLE
