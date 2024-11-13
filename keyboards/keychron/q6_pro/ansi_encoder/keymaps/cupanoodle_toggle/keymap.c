@@ -73,14 +73,6 @@ const uint16_t PROGMEM encoder_map[][1][2] = {
 };
 #endif // ENCODER_MAP_ENABLE
 
-/*
-void keyboard_post_init_user(void) {
-    rgblight_sethsv(HSV_PURPLE);
-    rgblight_mode(19); // solid_reactive_multiwide
-    rgblight_set_speed(22);
-}
-*/
-
 bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
     switch (get_highest_layer(layer_state)) {
     case WIN_TG:
@@ -98,7 +90,7 @@ const key_override_t alt_tab_override =
     	KC_TAB,             // Trigger key
     	KC_NO,              // Replacement key
     	1<<WIN_TG           // layers
-    ); // Specifies that the play key is not registered again after lifting ctrl
+    ); // allow alt or tab, but block alt+tab on WIN_TG (game mode) layer
 
 // This globally defines all key overrides to be used
 const key_override_t **key_overrides = (const key_override_t *[]){

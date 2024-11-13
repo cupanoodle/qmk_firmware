@@ -67,23 +67,6 @@ bool dip_switch_update_mask_user(uint32_t state) {
     return true;
 }
 
-/*
-bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
-    if (host_keyboard_led_state().caps_lock) {
-        rgb_matrix_set_color(62, 255, 0, 255);
-    } else {
-        rgb_matrix_set_color(62, 0, 0, 0);
-    }
-
-    if (host_keyboard_led_state().num_lock) {
-        rgb_matrix_set_color(37, 255, 0, 255);
-    } else {
-        rgb_matrix_set_color(37, 0, 0, 0);
-    }
-    return false;
-}
-*/
-
 void keyboard_post_init_user(void) {
     rgblight_sethsv(HSV_PURPLE);
     rgblight_mode(19); //solid_reactive_multiwide
